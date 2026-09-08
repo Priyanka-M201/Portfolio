@@ -1,0 +1,393 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*style the body*/
+body {
+    font-family: Arial, Helvetica, sans-serif;/*control the font sizze*/
+    margin: 0;/* initially a browser some space in webpage so we remove it using margin*/
+    background-color:#f8f9fa;/*" structure of css" selector(body) {(background) property:(lightblue) value}*/
+    color: #333333;/*set text color to drak gray*/
+}
+
+/*style the navigation*/
+nav {
+    background-color:#1f2937 ;/*dark background for navigation*/
+    padding: 15px 20px ;/*space inside the navigation*/
+    text-align: center;/* center the navigation content*/
+}
+
+/*Style the navigation link*/
+nav a{/*links inside nav*/
+    color: rgb(247, 242, 242);/* make the link white color*/
+    text-decoration: none;/* remove the underline*/
+    margin: 0 20px;/* add space between home  about  skill....*/
+}
+
+nav h2 {
+    color: white;
+    margin-bottom: 0 0 12px 0;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#home {
+    text-align: center;
+    padding: 100px 20px;
+}
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+#home h2 {
+    font-size: 24px;
+    font-weight: normal;/*prevent the subtitle looking too heavy*/ 
+    margin-bottom: 15px;
+}
+#home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.home-buttons{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+    flex-wrap: wrap;
+}
+.btn {
+    display: inline-block;/*space as enough for the content*/
+    background-color: #1f2937;
+    color: white;
+    padding: 12px 24px;/*length, breath*/
+    text-decoration: none;
+    border-radius: 6px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: #374151;/* when we keep mouse pointer on the button the color changed*/
+}
+
+#about{
+    text-align: center;
+    background-color: #f8f9fa
+}
+#about h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+#about p{
+    max-width: 800px;/*paragraph content space size length*/
+    margin:auto;
+    font-size: 18px;
+    line-height: 1.7;/*space between first and second line in paragraph*/
+}
+
+#skills {
+    padding: 60px 20px;
+    text-align: center;
+}
+#skills h2 {
+    
+    margin-bottom: 40px;
+}
+.skills-container {
+    display: flex;/*allows the card next to each other like side by side*/
+    justify-content: center;
+    gap: 25px;/*add sapce between cards*/
+    flex-wrap: wrap;/*this is important for screens that is adaptable for every screens*/
+}
+.skill-card {
+    background-color: white;
+    width: 200px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+.skill-card h3 {
+    margin-bottom: 15px;
+}
+.skill-card p {
+    margin: 8px 0;
+}
+.skill-card span{
+    font-size:14px;
+}
+#projects {
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: white;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 8px;
+    line-height: 1.5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+.project-card h3 {
+    text-align: center;
+}
+.project-tech {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+#education {
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+#education h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.education-card {
+    background-color: white;
+    max-width: 450px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.education-card h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.education-card p {
+    margin: 8px 0;
+}
+
+#contact {
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#contact > p {/*Select the <p> that is a direct child of #contact.*/
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.contact-item {
+    background-color: white;
+    color: #333333;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.contact-item:hover {
+    background-color: #1f2937;
+    color: white;
+}
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Achievements Section */
+
+#achievements {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#achievements h2 {
+    margin-bottom: 40px;
+}
+
+.achievement-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.achievement-card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.achievement-card h3 {
+    margin-bottom: 15px;
+}
+
+.achievement-card p {
+    line-height: 1.6;
+}
+
+.certificate-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #1f2937;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    #home h2 {
+        font-size: 20px;
+    }
+
+    .project-card,
+    .achievement-card,
+    .skill-card {
+        width: 90%;
+    }
+
+}
+
+/* Section Spacing */
+
+section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Button Hover Effect */
+
+.btn,
+.certificate-btn {
+    transition: 0.3s;
+}
+
+.btn:hover,
+.certificate-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+.skill-card,
+.project-card,
+.achievement-card {
+    transition: 0.3s;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+.skill-card,
+.project-card,
+.achievement-card {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+.btn,
+.certificate-btn {
+    font-weight: bold;
+    text-align: center;
+}
+.home-buttons .btn {
+    min-width: 150px;
+}
+.certificate-btn {
+    min-width: 120px;
+}
+section p {
+    line-height: 1.7;
+}
+section h2 {
+    margin-bottom: 30px;
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.project-card .btn:hover {
+    transform: scale(1.05);
+}
+.certificate-btn:hover {
+    transform: translateY(-3px);
+}
+@media (max-width: 600px) {
+
+    nav a {
+        padding: 5px;
+    }
+
+}
+@media (max-width: 600px) {
+
+    #home p {
+        padding: 0 10px;
+    }
+
+}
+footer {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+footer {
+    border-top: 1px solid #ddd;
+}
