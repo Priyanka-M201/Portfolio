@@ -3,6 +3,7 @@
     <head>
         <title>Priyanka | Portfolio</title> 
         <link rel="stylesheet" href="style.css"><!--link means connect with other file, rel="" means the file contain css href="" means the css file is called s style.css-->
+        <script src="script.js" defer></script>
     </head>
     <body>
         <nav>
@@ -13,15 +14,16 @@
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
+            <a href="#achievements">Achievements & Certifications</a>
             <a href="#contact">Contact</a>
         </nav>
         <section id="home"><!--unique name to this section-->
-
+            <p id="greeting"></p>
             <h1>Hi, I'm Priyanka</h1><!--Main Heading (h1)-->
 
             <h2>Final-Year Computer Science Engineering Student </h2><!--SubHeading(h2)-->
             
-            <p>Aspiring Software Developer with an interset in Java ,problem solving and building practical applications</p>
+            <p><span id="typing-text"></span></p>
             <div class="home-buttons">
                 <a href="#projects" class="btn">View my Projects</a>
                 <a href="./Priyanka_Resume.pdf" class="btn" target="_blank">Download Resume</a><!--./Priyanka_Resume.pdf-->
@@ -32,7 +34,7 @@
         <section id="about">
             <h2>About Me</h2>
             
-            <p>I am a final-year Computer Science Engineering student interested in software development and problem solving.
+            <p>I am a Final-year Computer Science Engineering student interested in software development and problem solving.
                 I have been building projects using Java and exploring 
                 technologies such as HTML, CSS and SQL.I enjoy learning new technologies and applying my 
                 knowledge to build practical applications.</p>
@@ -44,7 +46,7 @@
                 <div class="skill-card">
                     <h3>Programming</h3>
                     <p>Java</p>
-                    <!--<p>Python</p>-->
+                    <p>Python</p>
                     <p>C</p> 
                 </div>
 
@@ -94,6 +96,21 @@
 
             <a href="https://github.com/Priyanka-M201/Student_Management" class="btn" target="_blank">GitHub</a><!--'#' - placeholder-->
 
+        </div>
+        <div class="project-card">
+            <h3>AI Study Assistant </h3>
+
+            <p class="project-tech">
+                Python | Ollama | Llama 3.2 | LLM | Prompt Engineering
+            </p>
+            <p>
+                Built a local AI study assistant using Python, Ollama, and Llama 3.2.
+                It supports topic explanations, interview preparation, quizzes,
+                summaries, and DSA practice. The project uses prompt engineering,
+                conversation history for context-aware interactions, and exception
+                handling for error management.
+            </p>
+            <a href="https://github.com/Priyanka-M201/AI_Study_Assistant" class="btn" target="_blank">GitHub</a>
         </div>
     </div>
 </section>
@@ -149,9 +166,17 @@
                 <a href="https://github.com/Priyanka-M201" class="contact-item" target="_blank">GitHub</a><!--targett="_blank open in new tab"-->
                 <a href="https://www.linkedin.com/in/priyanka201" class="contact-item" target="_blank">LinkedIn</a>
             </div>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <textarea id="message" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p id="form-message"></p>
         </section>
         <footer>
-            <p>© 2026 Priyanka. All Rights Reserved</p>
+            <p>© <span id="current-year"></span>  Priyanka. All Rights Reserved</p>
         </footer>
+        <button id="back-to-top">^</button>
     </body>
 </html>
